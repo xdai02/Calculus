@@ -95,6 +95,8 @@ $$
 $$
 This relationship provides us with a way to easily convert between the two measures.
 
+---
+
 【Example】Convert from degrees to radians.
 
 (a) $ 30\degree =  $
@@ -108,6 +110,8 @@ This relationship provides us with a way to easily convert between the two measu
 (a) $ {\pi \over 4} =  $
 
 (b) $ {5\pi \over 6} = $ 
+
+---
 
 Given any angle $ \theta $, what are these equivalent angles?
 $$
@@ -135,11 +139,15 @@ Here are the three most common trigonometric functions and their reciprocals.
 | range                    |                                                    |
 | $ sin(\theta) = 0 $ when |                                                    |
 
+
+
 | $ cos(\theta) = x $      | <img src="./img/C1/1-3/2.png" style="zoom:80%;" /> |
 | ------------------------ | :------------------------------------------------: |
 | domain                   |                                                    |
 | range                    |                                                    |
 | $ cos(\theta) = 0 $ when |                                                    |
+
+
 
 | $ tan(\theta) = {y \over x} $ | <img src="./img/C1/1-3/2.png" style="zoom:80%;" /> |
 | ----------------------------- | :------------------------------------------------: |
@@ -147,17 +155,23 @@ Here are the three most common trigonometric functions and their reciprocals.
 | range                         |                                                    |
 | $ tan(\theta) = 0 $ when      |                                                    |
 
+
+
 | $ csc(\theta) = {1 \over y} $ | <img src="./img/C1/1-3/2.png" style="zoom:80%;" /> |
 | ----------------------------- | :------------------------------------------------: |
 | domain                        |                                                    |
 | range                         |                                                    |
 | $ csc(\theta) = 0 $ when      |                                                    |
 
+
+
 | $ sec(\theta) = {1 \over x} $ | <img src="./img/C1/1-3/2.png" style="zoom:80%;" /> |
 | ----------------------------- | :------------------------------------------------: |
 | domain                        |                                                    |
 | range                         |                                                    |
 | $ sec(\theta) = 0 $ when      |                                                    |
+
+
 
 | $ cot(\theta) = {1x \over y} $ | <img src="./img/C1/1-3/2.png" style="zoom:80%;" /> |
 | ------------------------------ | :------------------------------------------------: |
@@ -288,6 +302,8 @@ For example:
 $$
 log(x) = log_{10}(x)
 $$
+---
+
 【Example】Evaluate each of the following.
 
 (a) $ log_{2}8 = $
@@ -297,6 +313,8 @@ $$
 (c) $ log_{5}{1 \over 25} = $
 
 (d) $ log_{8}1 = $
+
+---
 
 Since any positive number to the power of 0 is equal to 1, we have the property that $ log_a(1) $, no matter what the base $ a $ is.
 
@@ -329,6 +347,8 @@ We can switch between any two bases easily by using the formula:
 $$
 log_a(x) = {log_b(x) \over log_b(a)}
 $$
+---
+
 【Example】Proof
 $$
 \begin{aligned}
@@ -347,13 +367,18 @@ log_b(x) &= log_b(a^y) \\
 $$
 
 
+
 【Example】Convert $ log_4(x) $ into a logarithm with each of the following bases.
 
 (a) base 3
 
 
 
+
+
 (b) base 22
+
+
 
 
 
@@ -370,9 +395,13 @@ $$
 ln(e^x) = x \\
 e^{ln(x)} = x
 $$
+---
+
 【Example】Solve each of the following for $ x $.
 
 (a) $ 2^x = 2^{1-x} $
+
+
 
 
 
@@ -392,7 +421,11 @@ $$
 
 
 
+
+
 (c) $ 2^x = 10 $
+
+
 
 
 
@@ -414,7 +447,11 @@ $$
 
 
 
+
+
 (e) $ log_2(x) + log_2(x^2) = 6 $
+
+
 
 
 
@@ -440,6 +477,8 @@ $$
 
 
 
+
+
  <div style="page-break-after: always;"></div>
 
 # Chapter 2 Inequalities
@@ -449,6 +488,8 @@ $$
 **Piecewise Functions**
 
 Piecewise functions typically feature one or more points at which the function changes from one form to another. To graph a piecewise function, simply graph each piece and then restrict it to its designated domain. Pay special attention when plotting the breaking point (closed circle includes the point, open circle excludes the point).
+
+---
 
 【Example】Graph the piecewise function given by
 $$
@@ -506,11 +547,13 @@ Consider $ 3x - 5 = 1 $, only one value satisfies this equation.
 
 But if we consider $ x^2 - 1 = 3 $, more than one value satisfies this equation.
 
-Inequalities notation like $ 1 \le x < 3 $, where the symbols 【$ \le $】 and 【$ \ge $】 indicate inclusion of an endpoint, and 【$ < $】 and 【$ > $】 indicate exclusion of an endpoint.
+Inequalities notation like $ 1 \le x < 3 $, where the symbols $ \le $ and $ \ge $ indicate inclusion of an endpoint, and $ < $ and $ > $ indicate exclusion of an endpoint.
 
 A second notation is interval notation, for example, $ x \in [1, 3) $, where a square (or closed) bracket indicates inclusion of an endpoint, and a round (or open) bracket indicates exclusion of an endpoint.
 
 The infinity symbol $ \infin $ is always accompanied by round brackets.
+
+---
 
 【Example】Write each of the following in interval notation.
 
@@ -518,11 +561,17 @@ The infinity symbol $ \infin $ is always accompanied by round brackets.
 
 
 
+
+
 (b) $ x < 9 $
 
 
 
+
+
 (c) $ -3 > x > 0 $
+
+
 
 
 
@@ -534,7 +583,11 @@ The infinity symbol $ \infin $ is always accompanied by round brackets.
 
 
 
+
+
 (b) $  x \in (-2, 4) $
+
+
 
 
 
@@ -542,7 +595,13 @@ The infinity symbol $ \infin $ is always accompanied by round brackets.
 
 
 
-It is possible to have ranges of values that are disjoint. We use the union symbol 【$ \bigcup $】 to include all of the values in any of the disjoint ranges. For example, $ [-1, 4) \bigcup [7, 10) $ meas $ -1 \le x < 4 $ or $ 7 \le x < 10 $.
+
+
+---
+
+It is possible to have ranges of values that are disjoint. We use the union symbol $ \bigcup $ to include all of the values in any of the disjoint ranges. For example, $ [-1, 4) \bigcup [7, 10) $ meas $ -1 \le x < 4 $ or $ 7 \le x < 10 $.
+
+---
 
 【Example】Express each of the following in interval notation.
 
@@ -550,7 +609,11 @@ It is possible to have ranges of values that are disjoint. We use the union symb
 
 
 
+
+
 (b) $ 1 \le x < 5 $ or $ 3 \le x < 7 $
+
+
 
 
 
@@ -558,7 +621,13 @@ It is possible to have ranges of values that are disjoint. We use the union symb
 
 
 
-Intersection symbol 【$ \bigcap $】 allows only the values that are common between intervals. For example, $ [-1, 6) \bigcap (2, 7) $ meahs $ (2, 6) $.
+
+
+---
+
+Intersection symbol $ \bigcap $ allows only the values that are common between intervals. For example, $ [-1, 6) \bigcap (2, 7) $ means $ (2, 6) $.
+
+---
 
 【Example】Express each of the following in interval notation.
 
@@ -566,11 +635,17 @@ Intersection symbol 【$ \bigcap $】 allows only the values that are common bet
 
 
 
+
+
 (b) $ x \in [0, 5] \bigcap [3, 5] $
 
 
 
+
+
 (c) $ -4 < x < 0 $ and $ 3 < x < 7 $
+
+
 
 
 
@@ -584,9 +659,13 @@ When solving inequalities, there are a few rules that we must follow:
 2. If you multiply or divide by a negative quantity, you must flip the inequality.
 3. If both sides are positive or both sides are negative, then you can take the reciprocal of both sides, but you must flip the inequality.
 
+---
+
 【Example】Find all values of x that satisfy the following.
 
 (a) $ -6x + 7 \ge 8x $
+
+
 
 
 
@@ -602,7 +681,11 @@ When solving inequalities, there are a few rules that we must follow:
 
 
 
+
+
 (c) $ 5x^3 + 27 > -13 $
+
+
 
 
 
@@ -618,6 +701,8 @@ When solving inequalities, there are a few rules that we must follow:
 
 
 
+
+
 (e) $ \sqrt{x-1} > 4 $
 
 
@@ -626,7 +711,11 @@ When solving inequalities, there are a few rules that we must follow:
 
 
 
+
+
 (f) $ log_2(3x) \le -3 $
+
+
 
 
 
@@ -667,6 +756,8 @@ You might be tempted to cross multiply, but be careful! The quantity $ x - 1$ is
     $$
     x \in (1, \infin) \bigcup (-\infin, {7 \over 9})
     $$
+
+---
 
 【Example】Find all values of x such that $ {7x - 2 \over 1 - 2x}  \ge 4 $.
 
@@ -709,6 +800,8 @@ $$
 $$
 By manipulating expressions into factors that are multiplied and/or divided on one side of the inequality (with a zero appearing on the other side), we can simply consider the combinations of positive and negative factors to draw conclusions.
 
+---
+
 【Example】Find all values of x that satisfy $ 3x^2 - 13x > -10 $.
 
 
@@ -721,7 +814,11 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 
 
 
+
+
 【Example】Find all values of x that satisfy $ x - 2 \ge {4 \over x+1} $.
+
+
 
 
 
@@ -753,6 +850,8 @@ For example, suppose we wanted to determine $ \lim\limits_{x \rarr 3}x^2 $.
 
 No matter which way we approach from, as $ x $ gets close 3, we can see that $ x^2 $ gets very close to 9.
 
+---
+
 【Example】Find  $ \lim\limits_{x \rarr 0}f(x) $ where
 $$
 f(x) = \begin{cases}
@@ -775,6 +874,8 @@ $$
 \lim\limits_{x \rarr a}(fg)(x) = \lim\limits_{x \rarr a}f(x) \cdot \lim\limits_{x \rarr a}g(x) \\
 \lim\limits_{x \rarr a}({f \over g})(x) = {\lim\limits_{x \rarr a}f(x) \over \lim\limits_{x \rarr a}g(x)}\\
 $$
+---
+
 【Example】Evaluate $ \lim\limits_{x \rarr 0}xsin({1 \over x}) $.
 
 
@@ -795,6 +896,8 @@ $ x $ can approach the value a in two ways:
 - right-hand limit: $ \lim\limits_{x \rarr a^+}f(x) $
 
 We can tighten our definition of the limit of a function $ f(x) $ as $ x $ approaches $ a $. If the left-hand and right-hand limits of $ f(x) $ are both equal to a number $ L $, then we say that $ \lim\limits_{x \rarr a}f(x) $ exists and is equal to $ L $.
+
+---
 
 【Example】Consider the piecewise function given by
 $$
@@ -820,6 +923,8 @@ $$
 
 It seems like sometimes we can evaluate a limit by just plugging in, but sometimes we can’t!
 
+---
+
 【Example】Evaluate $ \lim\limits_{x \rarr 1}(ln(\sqrt{x}) + {1 \over x}) $.
 
 
@@ -829,6 +934,10 @@ It seems like sometimes we can evaluate a limit by just plugging in, but sometim
 
 
 
+
+
+
+---
 
 A function is continuous at a point a if each of the following conditions hold:
 
@@ -848,6 +957,8 @@ Kinds of discontinuities:
 
 So far, we know that evaluating $ \lim\limits_{x \rarr a}f(x) $ is easy if $ f(x) $ is continuous at $ a $. But what if it isn’t? The limit may still exist.
 
+---
+
 【Example】Evaluate the following limits.
 
 (a) $ \lim\limits_{x \rarr 3^+}{1 \over 3-x} = $
@@ -858,9 +969,13 @@ So far, we know that evaluating $ \lim\limits_{x \rarr a}f(x) $ is easy if $ f(x
 
 (d) $ \lim\limits_{x \rarr -{\pi \over 2}^+}sec(x) = $
 
+---
+
 A function doesn’t have to go to $ \pm \infin $ at a discontinuity though. Consider, for instance, evaluating $ \lim\limits_{x \rarr 3}{x^2-x-6 \over x-3} $. Plugging in $ x = 3 $ gives us "$ 0 / 0 $", which is known as an indeterminate form.
 
 A good first step is to factor where possible. Once we cancel the factor $ x - 3 $ on top and bottom, this function is just the function $ f(x) = x + 2 $, but with a hole at $ x = 3 $. The hole is there because we cannot ignore that the original form of the function had issues at $ x = 3 $.
+
+---
 
 【Example】Evaluate the following limits.
 
@@ -874,7 +989,11 @@ A good first step is to factor where possible. Once we cancel the factor $ x - 3
 
 <img src="./img/C3/3-2/1.png" style="zoom: 67%;" />
 
+
+
 (b) $ \lim\limits_{x \rarr -1}{x^3 - 11x^2 + 8x + 20 \over x + 1} $
+
+
 
 
 
@@ -892,7 +1011,11 @@ A good first step is to factor where possible. Once we cancel the factor $ x - 3
 
 
 
+
+
 (d) $ \lim\limits_{x \rarr 2}{{1 \over x-4} + {1 \over 2} \over x-2} $
+
+
 
 
 
@@ -922,9 +1045,13 @@ It is pretty clear from the graph that
 $$
 \lim\limits_{x \rarr 0}{sin(x) \over x} = \lim\limits_{x \rarr 0}{x \over sin(x)} = 1
 $$
+---
+
 【Example】Evaluate the following limits.
 
 (a) $ \lim\limits_{t \rarr 0}{5sin(t) \over 2t} $
+
+
 
 
 
@@ -942,7 +1069,11 @@ $$
 
 
 
+
+
 (c) $ \lim\limits_{x \rarr -1}{sin^2(x+1) \over (x+1)^2} $
+
+
 
 
 
@@ -958,7 +1089,11 @@ $$
 
 
 
+
+
 (e) $ \lim\limits_{\theta \rarr 0}{100\theta \over tan(3\theta)} $
+
+
 
 
 
@@ -980,10 +1115,6 @@ $$
 
 
 
-
-
-
-
 <div style="page-break-after: always;"></div>
 
 ## 3.4 Limits Approaching $ \pm \infin $
@@ -991,6 +1122,8 @@ $$
 **Limits Approaching $ \pm \infin $**
 
 Sometimes, we will be interested in determining what happens as $ x $ gets really big, either in the positive or negative direction.
+
+---
 
 【Example】Evaluate the following limits.
 
@@ -1002,7 +1135,11 @@ Sometimes, we will be interested in determining what happens as $ x $ gets reall
 
 (d) $ \lim\limits_{x \rarr -\infin}{-238 \over 23x^{1/4}} = $
 
+---
+
 For problems like $ \lim\limits_{x \rarr \infin}{2x^2 + 3x + 1 \over x^2 - 10x + 100} $, a good first step is to divide the top and the bottom by the highest power of $ x $ appearing in the denominator.
+
+---
 
 【Example】Evaluate the following limits.
 
@@ -1018,7 +1155,11 @@ For problems like $ \lim\limits_{x \rarr \infin}{2x^2 + 3x + 1 \over x^2 - 10x +
 
 
 
+
+
 (b) $ \lim\limits_{x \rarr -\infin}{3 - 2x^3 \over 1 + x + x^2} $
+
+
 
 
 
@@ -1050,7 +1191,11 @@ For problems like $ \lim\limits_{x \rarr \infin}{2x^2 + 3x + 1 \over x^2 - 10x +
 
 
 
+
+
 (d) $ \lim\limits_{t \rarr \infin}{\sqrt{3t^2 + 2t + 5} + t} $
+
+
 
 
 
@@ -1093,6 +1238,8 @@ When $ f(x) $ has a derivative at $ (a, f(a)) $, we say that $ f(x) $ is differe
 $$
 \lim\limits_{h \rarr 0^-}{f(x+h) - f(x) \over h} = \lim\limits_{h \rarr 0^+}{f(x+h) - f(x) \over h}
 $$
+---
+
 【Example】From The First Principles, find the derivatives.
 
 (a) $ f(x) = x^2 $
@@ -1111,7 +1258,11 @@ $$
 
 
 
+
+
 (b) $ f(x) = \sqrt{x+2} $
+
+
 
 
 
@@ -1165,6 +1316,8 @@ In all of these cases, the limit of the slopes does not exist at a point. Functi
 
 Differentiability implies continuity, but the reverse is not true. Consider the function $ y = |x| $ as a counterexample. This function is continuous for all values of $ x $, but it is not differentiable at $ x = 0 $, because there is a corner there. The limit of the slopes does not exist at $ x = 0$.
 
+---
+
 【Example】Discuss the continuity and differentiability.
 
 <img src="./img/C4/4-2/5.png" style="zoom:67%;" />
@@ -1187,7 +1340,11 @@ The First Principles definition of the limit can become a cumbersome task when f
 
     Let $ f(x) = x^n $, then $ f'(x) = nx^{n-1} $.
 
+    ---
+
     【Example】Find the derivative of $ f(x) = x^7 $.
+
+    
 
     
 
@@ -1195,7 +1352,11 @@ The First Principles definition of the limit can become a cumbersome task when f
 
     Let $ f(x) = k $, then $ f'(x) = 0 $. Graphically, since a constant function is a horizontal line, so its slope must be zero.
 
+    ---
+
     【Example】Find the derivative of $ f(x) = 672 $.
+
+    
 
     
 
@@ -1205,7 +1366,11 @@ The First Principles definition of the limit can become a cumbersome task when f
 
     $ {d \over dx}ln(x) = {d \over dx}log_e(x) = {1 \over xln(e)} = {1 \over x} $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = log_4(x) $.
+
+    
 
     
 
@@ -1215,7 +1380,11 @@ The First Principles definition of the limit can become a cumbersome task when f
 
     $ {d \over dx}e^x = e^xln(e) = e^x $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = 5^x $.
+
+    
 
     
 
@@ -1230,7 +1399,9 @@ The First Principles definition of the limit can become a cumbersome task when f
     {d \over dx}cot(x) &= -csc^2(x)
     \end{aligned}
     $$
-    Memory tool: if the trigonometric function starts with 【c】, then its derivative has a minus sign.
+    Memory tool: if the trigonometric function starts with `c`, then its derivative has a minus sign.
+
+---
 
 What about combining these basic derivative rules for functions? That is, how do we find the derivatives of the addition, subtraction, multiplication, division, or take the constant of functions? For all of the following rules, we assume that f and g are differentiable on their domains.
 
@@ -1238,7 +1409,11 @@ What about combining these basic derivative rules for functions? That is, how do
 
     $ (kf(x))' = kf'(x) $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = 5ln(x) $.
+
+    
 
     
 
@@ -1246,7 +1421,11 @@ What about combining these basic derivative rules for functions? That is, how do
 
     $ (f \pm g)'(x) = f'(x) \pm g'(x) $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = ln(x) + 4x^3 - 6csc(x) $.
+
+    
 
     
 
@@ -1256,7 +1435,11 @@ What about combining these basic derivative rules for functions? That is, how do
 
     $ (fg)'(x) = f'(x)g(x) + f(x)g'(x) $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = ln(x)cos(x) $.
+
+    
 
     
 
@@ -1266,7 +1449,11 @@ What about combining these basic derivative rules for functions? That is, how do
 
     $ ({f \over g})'(x) = {f'g - fg' \over g^2} $, where $ g(x) \ne 0 $
 
+    ---
+
     【Example】Find the derivative of $ f(x) = {5^x \over x^2} $.
+
+    
 
     
 
@@ -1284,9 +1471,13 @@ What about combining these basic derivative rules for functions? That is, how do
 
     
 
+    
+
 5. Chain Rule
 
     $ (f(g(x)))' = f'(g(x)) \cdot g'(x) $
+
+    ---
 
     【Example】Find the derivative of the following functions.
 
@@ -1307,7 +1498,6 @@ What about combining these basic derivative rules for functions? That is, how do
     
 
     (e) $ f(x) = sin^3(x^2 + {1 \over x}) $
-
     
 
 <div style="page-break-after: always;"></div>
@@ -1336,6 +1526,8 @@ $$
 {d^ny \over dx^n} && y^{(n)} && f^{(n)}(x)
 \end{aligned}
 $$
+---
+
 【Example】Let $ f(x) = 2x^4 $, find $ f'(x) $, $ f''(x) $, $ f'''(x) $, $ f^{(4)}(x) $, $ f^{(5)}(x) $.
 
 
@@ -1360,6 +1552,8 @@ $$
 
 For relations like these, there is no way to isolate for either $ x $ or $ y $. Either variable is implicitly defined in the equation in both of the above cases.
 
+---
+
 【Example】If $ x^3 + xy + y^2 = 1 $, find $ dy \over dx $ at the point $ (x, y) = (1, 0) $.
 
 
@@ -1376,7 +1570,11 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
 
 
 
+
+
 【Example】If $ sin(tx^3) + ln(t^2 + x) = 0 $, find $ dx \over dt $.
+
+
 
 
 
@@ -1414,7 +1612,11 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
 
 
 
+
+
 【Example】If $ x^3 + x = y $, find $ d^2y \over dx^2 $.
+
+
 
 
 
@@ -1462,6 +1664,8 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
 
 
 
+
+
 (b) Consider the angle that the ladder makes with the ground. How fast is this angle changing at that exact moment?
 
 
@@ -1482,6 +1686,8 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
 
 Logarithmic differentiation allows us to take the derivatives of more complicated expressions. The derivative rules give us a way to quickly differentiate expression like $x^5$, $e^{4x}$, $ 2^x $. But what about $x^x$?
 
+---
+
 【Example】Use a table of values to sketch the function $ f(x) = x^x $.
 
 <img src="./img/C4/4-6/1.png" style="zoom:80%;" />
@@ -1499,7 +1705,11 @@ $ x^x $ is indeterminate when $ x = 0 $. Because the domain of $ x^x $ is extrem
 
 So, how do we determine the derivative of this function? With logarithmic differentiation, we take the ln() of both side. Then we use log rules to simplify what we get before we finish by differentiating implicitly.
 
+---
+
 【Example】If $ y = x^x $, find $ dy \over dx $.
+
+
 
 
 
@@ -1523,13 +1733,13 @@ So, how do we determine the derivative of this function? With logarithmic differ
 
 
 
+---
+
 It would be tedious to differentiate expression like $ y = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}} $ using product and quotient rules, and put pus at a high risk for making mistakes. We can use logarithms to simplify problems. It is technically an important step that we take the absolute value of both sides first that we aren’t considering the $ ln() $ of a negative number.
 
+---
+
 【Example】If $ y = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}} $, find $ dy \over dx $.
-
-
-
-
 
 
 
@@ -1582,7 +1792,11 @@ The idea is simple. Given a function $ f(x) $ and a difficult-to-evaluate value 
 
 
 
+---
+
 【Example】Estimate $ \sqrt{65} $ using differential approximation.
+
+
 
 
 
@@ -1640,8 +1854,10 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     $$
     \int x^n \ dx = {x^{n+1} \over n+1} + C,\ where\ n \ne -1
     $$
-    【Example】Find the anitiderivatives.
+    ---
 
+    【Example】Find the anitiderivatives.
+    
     (a)
     $$
     \int x^6 \ dx
@@ -1649,7 +1865,8 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     
     
     
-
+    
+    
     (b)
     $$
     \int \sqrt[4]{t} \ dt
@@ -1658,10 +1875,11 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     
     
     
-    
-    
-    
 
+    
+    
+    
+    
     (c)
     $$
     \int {1 \over x^{5/3}} \ dx
@@ -1671,15 +1889,20 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     
     
     
+    
+    
 2. Antiderivative of Zero
     $$
     \int 0 \ dx = C
     $$
-
+    
+    
 3. Antiderivative of a Constant
     $$
     \int k \ dx = kx + C,\ where\ k\ is\ any\ constant
     $$
+    ---
+    
     【Example】Find the anitiderivatives.
     $$
     & \int \pi \ dx \\
@@ -1687,10 +1910,14 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     
     
     
+    
+    
 4. Multiplicative Constants
     $$
     \int kf(x) \ dx = k \int f(x) \ dx
     $$
+    ---
+
     【Example】Find the anitiderivatives.
 
     (a)
@@ -1702,40 +1929,50 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
 
     
 
+    
+
     (b)
     $$
     \int {\pi \over \sqrt{t}} \ dt
     $$
+
     
+
     
+
     
-    
-    
+
 5. Sum / Difference
     $$
     \int (f(x) \pm g(x)) \ dx = \int f(x) \ dx \pm \int g(x) \ dx
     $$
+    ---
+
     【Example】Find the anitiderivatives.
 
     (a)
     $$
     \int (3x^2 + 5) \ dx
     $$
+
     
+
     
+
     
-    
-    
+
 
     (b)
     $$
     \int ({1 \over x^3} - {2 \over x^2}) \ dx
     $$
+
     
+
     
+
     
-    
-    
+
 6. Trigonometric Functions
     $$
     \begin{aligned}
@@ -1747,6 +1984,7 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     \int csc(x)cot(x) \ dx &= -csc(x) + C
     \end{aligned}
     $$
+    
 
 7. Exponential / Logarithmic
     $$
@@ -1757,25 +1995,32 @@ The power rule for derivatives multiplies by the power and then subtracts one fr
     \int {1 \over x} \ dx &= ln|x| + C
     \end{aligned}
     $$
+    ---
+
     【Example】Find the anitiderivatives.
 
     (a)
     $$
     \int 4^xln(4) + 5e^x - {6 \over x} \ dx
     $$
+
     
+
     
-    
+
 
     (b)
     $$
     \int 3^z \ dz
     $$
-    
-    
+
     
 
+---
+
 Sometimes we need to manipulate the integral a little bit before we can apply the rules.
+
+---
 
 【Example】Find the anitiderivatives.
 
@@ -1791,10 +2036,14 @@ $$
 
 
 
+
+
 (b)
 $$
 \int ({1 \over x} + {1 \over x^2})(3 + 2x^2) \ dx
 $$
+
+
 
 
 
@@ -1817,12 +2066,16 @@ Notice that in the integration, the $ u'(x) $ piece disappears, being absorbed b
 2. Identify the derivative of the core layer $ u'(x) $.
 3. Identify the outer layer $ f' $, and integrate $ f' $ leaving $ u(x) $inside.
 
+---
+
 【Example】Find the anitiderivatives.
 
 (a)
 $$
 \int (6x^2 + 1)sin(2x^3 + x) \ dx
 $$
+
+
 
 
 
@@ -1853,10 +2106,14 @@ $$
 
 
 
+
+
 (c)
 $$
 \int 4x^3(3x^4 - 1)^{14} \ dx
 $$
+
+
 
 
 
@@ -1893,10 +2150,14 @@ $$
 
 
 
+
+
 【Example】Integrate in one step.
 $$
 \int e^{-2t} + sin(3t) + cos({1 \over 4}t) \ dt
 $$
+
+
 
 
 <div style="page-break-after: always;"></div>
@@ -1909,6 +2170,8 @@ The idea behind the method of substitution is to change a difficult integral in 
 $$
 \int f'(u(x)) \ {du \over dx} = \int f'(u) \ du
 $$
+---
+
 【Example】The method of substitution.
 $$
 \int (6x + 4)(3x^2 + 4x)^5 \ dx
@@ -1934,6 +2197,7 @@ $$
 \end{aligned}
 $$
 
+---
 
 【Example】Calculate using the method of substitution.
 
@@ -1941,6 +2205,8 @@ $$
 $$
 \int sin(x)e^{5cos(x)} \ dx
 $$
+
+
 
 
 
@@ -1989,10 +2255,14 @@ $$
 
 
 
+
+
 (c)
 $$
 \int xsec(3x^2)tan(3x^2) \ dx
 $$
+
+
 
 
 
@@ -2027,6 +2297,8 @@ $$
 
 
 
+
+
 (e)
 $$
 \int (1 + 900x)^{1/15000} \ dx
@@ -2045,10 +2317,14 @@ $$
 
 
 
+
+
 (f)
 $$
 \int sin(\theta)(cos^3\theta - cos^5\theta) \ d\theta
 $$
+
+
 
 
 
@@ -2079,12 +2355,12 @@ $$
 
 
 
+
+
 (h)
 $$
 \int (2x + 5) \cdot \sqrt[3]{3x + 1} \ dx
 $$
-
-
 
 
 
@@ -2129,6 +2405,8 @@ The total area of all the rectangles is:
 $$
 f(x_1) \cdot \Delta x_1 + f(x_2) \cdot \Delta x_2 + \dots + f(x_n) \cdot \Delta x_n = \sum_{k=1}^{n} f(x_k) \cdot \Delta x_k
 $$
+---
+
 【Example】Use the Riemann Sum to estimate the area below $ y = sin({1 \over 2}x) $ and above the x-axis, between $ x = 0 $ and $ x = 2\pi $. Use a partition of 4 subintervals.
 
 <img src="./img/C5/5-4/3.png" style="zoom: 50%;" />
@@ -2142,6 +2420,8 @@ $$
 
 
 
+
+---
 
 So, what happens as make the rectangles skinnier?
 
@@ -2188,6 +2468,8 @@ $$
 
 
 
+
+
 (b)
 $$
 \int_{-2}^1 x^3 \ dx
@@ -2202,10 +2484,14 @@ $$
 
 
 
+
+
 (c)
 $$
 \int_1^5 s(s^2 + 1) \ ds
 $$
+
+
 
 
 
@@ -2244,6 +2530,8 @@ $$
 
 
 
+
+
 (e)
 $$
 \int_x^{x^2} sin(t) \ dt
@@ -2256,10 +2544,14 @@ $$
 
 
 
+
+
 (f)
 $$
 \int_5^{13} (x + 1)\sqrt{2x - 1} \ dx
 $$
+
+
 
 
 
@@ -2316,6 +2608,8 @@ $$
 
 
 
+---
+
 What if we have a more interesting situation where many curves are involved? For instance, how do we find the area between two curves $ f $ and $ g $?
 
 ![](./img/C5/5-5/2.png)
@@ -2350,9 +2644,13 @@ What if we have a more interesting situation where many curves are involved? For
 
 
 
+
+
 【Example】Calculate the area bounded by $ y = -x $ and $ y = -x^2 + 2 $ between $ x = 0 $ and $ x = 2 $.
 
 <img src="./img/C5/5-5/4.png" style="zoom: 50%;" />
+
+
 
 
 
