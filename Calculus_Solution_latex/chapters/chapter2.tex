@@ -1,0 +1,155 @@
+\part{Inequalities}
+
+\chapterimage{style/chapter.pdf}
+
+\chapter{Piecewise Functions}
+
+\section{Piecewise Functions}
+
+Piecewise functions typically feature one or more points at which the function changes from one form to another. To graph a piecewise function, simply graph each piece and then restrict it to its designated domain. Pay special attention when plotting the breaking point (closed circle includes the point, open circle excludes the point). \\
+
+\begin{exercise}\nonumber
+	Graph the piecewise function given by \\
+	\begin{align}
+		y = \begin{cases}
+			1   & x \le 0 \\
+			4^x & x > 0
+		\end{cases}
+	\end{align}
+\end{exercise}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=0.3,yscale=0.4]
+		\draw[->] (-7,0) -- (7,0) node[right] {$ x $};
+		\draw[->] (0,-18) -- (0,18) node[above] {$ y $};
+		\draw[very thick,color=red,domain=-5:0] plot (\x,{1});
+		\draw[very thick,color=red,domain=0:2,samples=100] plot (\x,{4 ^ \x});
+	\end{tikzpicture}
+	\caption{piecewise function}
+\end{figure}
+
+\begin{exercise}\nonumber
+	Graph the piecewise function given by \\
+	\begin{align}
+		y = \begin{cases}
+			{1 \over 2}x + 3 & x < -2         \\
+			0                & -2 \le x \le 2 \\
+			x^2 - 1          & x > 2
+		\end{cases}
+	\end{align}
+\end{exercise}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=0.5,yscale=0.3]
+		\draw[->] (-10,0) -- (6,0) node[right] {$ x $};
+		\draw[->] (0,-5) -- (0,20) node[above] {$ y $};
+		\draw[very thick,color=red,domain=-9:-2.1] plot (\x,{0.5 * \x + 3});
+		\draw[very thick,color=red,domain=-2:2] plot (\x,{0});
+		\draw[very thick,color=red,domain=2.1:4] plot (\x,{\x^2 - 1});
+		\foreach \point in {(-2,0),(2,0)} {
+				\node at \point [red,circle,fill,inner sep=1.5pt]{};
+			}
+		\foreach \point in {(-2,2),(2,3)} {
+				\node at \point [red,circle,inner sep=1.5pt]{$\circ$};
+			}
+	\end{tikzpicture}
+	\caption{piecewise function}
+\end{figure}
+
+\chapter{Absolute Value Functions}
+
+\section{Absolute Value Functions}
+
+A very special and common piecewise function is the absolute value function. \\
+
+\begin{itemize}
+	\item
+	      $ y = |x| = \begin{cases} x & x \ge 0 \\ -x & x < 0 \end{cases} $ \\
+
+	\item
+	      $ x \in \mathbb R $ \\
+
+	\item
+	      $ y \ge 0 $ \\
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=0.8]
+		\draw[->] (-4,0) -- (4,0) node[right] {$ x $};
+		\draw[->] (0,-2) -- (0,4) node[above] {$ y $};
+		\draw[very thick,color=red,domain=-3:0] plot (\x,{-\x});
+		\draw[very thick,color=red,domain=0:3] plot (\x,{\x}) node[right] {$ y = |x| $};
+	\end{tikzpicture}
+	\caption{absolute value function}
+\end{figure}
+
+\begin{theorem}[Absolute Values]
+	\begin{align}
+		 & |ab| = |a| \cdot |b|                           \\
+		 & |{a \over b}| = {|a| \over |b|}                \\
+		 & if\ |a| \le b,\ then\ -b \le a \le b           \\
+		 & if\ |a| \ge b,\ then\ a \ge b \ or \ a \le -b  \\
+		 & (Triangle \ Inequality)\ |a + b| \le |a| + |b|
+	\end{align}
+\end{theorem}
+
+\chapter{Inequalities Notation}
+
+\section{Inequalities Notation}
+
+When solving equation we may get a single answer, or a number of answers that satisfy the equation. \\
+
+Consider $ 3x - 5 = 1 $, only one value satisfies this equation. \\
+
+But if we consider $ x^2 - 1 = 3 $, more than one value satisfies this equation. \\
+
+Inequalities notation like $ 1 \le x < 3 $, where the symbols $ \le $ and $ \ge $ indicate inclusion of an endpoint, and $ < $ and $ > $ indicate exclusion of an endpoint. \\
+
+A second notation is interval notation, for example, $ x \in [1, 3) $, where a square (or closed) bracket indicates inclusion of an endpoint, and a round (or open) bracket indicates exclusion of an endpoint. \\
+
+The infinity symbol $ \infty $ is always accompanied by round brackets. \\
+
+\begin{exercise}\nonumber
+	Write each of the following in interval notation. \\
+
+	(a) $ 2 \le x \le 7 $ \\
+	$$
+		x \in [2, 7]
+	$$
+
+	(b) $ x < 9 $ \\
+	$$
+		x \in (-\infty, 9)
+	$$
+
+	(c) $ -3 > x > 0 $ \\
+	$$
+		x \in \emptyset
+	$$
+\end{exercise}
+
+\begin{exercise}\nonumber
+	Write each of the following using inequalities. \\
+
+	(a) $ x \in [3, 6) $ \\
+	$$
+		3 \le x < 6
+	$$
+
+	(b) $ x \in (-2, 4) $ \\
+	$$
+		-2 < x < 4
+	$$
+
+	(c) $ x \in (-\infty, -1] $ \\
+	$$
+		x \le -1
+	$$
+\end{exercise}
+
+It is possible to have ranges of values that are disjoint. We use the union symbol $ \cup $ to include all of the values in any of the disjoint ranges. For example, $ [-1, 4) \cup [7, 10) $ meas $ -1 \le x < 4 $ or $ 7 \le x < 10 $. \\
+
+\newpage
