@@ -1,8 +1,8 @@
-\chapter{Inequalities}
+\part{Inequalities}
+
+\chapter{Piecewise Functions}
 
 \section{Piecewise Functions}
-
-\subsection{Piecewise Functions}
 
 Piecewise functions typically feature one or more points at which the function changes from one form to another. To graph a piecewise function, simply graph each piece and then restrict it to its designated domain. Pay special attention when plotting the breaking point (closed circle includes the point, open circle excludes the point). \\
 
@@ -17,7 +17,7 @@ Piecewise functions typically feature one or more points at which the function c
 
 	\begin{figure}[H]
 		\centering
-		\begin{tikzpicture}[scale=0.2,yscale=0.4]
+		\begin{tikzpicture}[scale=0.3,yscale=0.4]
 			\draw[->] (-7,0) -- (7,0) node[right] {$ x $};
 			\draw[->] (0,-18) -- (0,18) node[above] {$ y $};
 			\draw[very thick,color=red,domain=-5:0] plot (\x,{1});
@@ -56,9 +56,9 @@ Piecewise functions typically feature one or more points at which the function c
 
 \newpage
 
-\section{Absolute Value Functions}
+\chapter{Absolute Value Functions}
 
-\subsection{Absolute Value Functions}
+\section{Absolute Value Functions}
 
 A very special and common piecewise function is the absolute value function. \\
 
@@ -87,18 +87,16 @@ A very special and common piecewise function is the absolute value function. \\
 \begin{theorem}[Absolute Values]
 	\begin{align}
 		 & |ab| = |a| \cdot |b|                           \\
-		 & |{a \over b}| = {|a| \over |b|}                \\
+		 & \left|{a \over b}\right| = {|a| \over |b|}     \\
 		 & if\ |a| \le b,\ then\ -b \le a \le b           \\
 		 & if\ |a| \ge b,\ then\ a \ge b \ or \ a \le -b  \\
 		 & (Triangle \ Inequality)\ |a + b| \le |a| + |b|
 	\end{align}
 \end{theorem}
 
-\newpage
+\chapter{Inequalities Notation}
 
 \section{Inequalities Notation}
-
-\subsection{Inequalities Notation}
 
 When solving equation we may get a single answer, or a number of answers that satisfy the equation. \\
 
@@ -157,7 +155,7 @@ It is possible to have ranges of values that are disjoint. We use the union symb
 
 	(a) $ -3 \le x < {1 \over 2} $ or $ 4 < x < 7 $ \\
 	$$
-		x \in [-3, {1 \over 2}] \cup (4, 7)
+		x \in \left[-3, {1 \over 2}\right] \cup (4, 7)
 	$$
 
 	(b) $ 1 \le x < 5 $ or $ 3 \le x < 7 $ \\
@@ -192,7 +190,7 @@ Intersection symbol $ \cap $ allows only the values that are common between inte
 	$$
 \end{exercise}
 
-\subsection{Solving Inequalities}
+\section{Solving Inequalities}
 
 When solving inequalities, there are a few rules that we must follow: \\
 
@@ -222,7 +220,7 @@ When solving inequalities, there are a few rules that we must follow: \\
 		-{5 \over 2} < 4 - 2x \le 1      \\
 		-{13 \over 2} < -2x \le -3       \\
 		{13 \over 4} > x \ge {3 \over 2} \\
-		x \in [{3 \over 2}, {13 \over 4})
+		x \in \left[{3 \over 2}, {13 \over 4}\right)
 	\end{align} \\
 
 	(c)
@@ -257,11 +255,9 @@ When solving inequalities, there are a few rules that we must follow: \\
 	\end{align}
 \end{exercise}
 
-\newpage
+\chapter{The Case Method}
 
 \section{The Case Method}
-
-\subsection{The Case Method}
 
 Consider the following example: $ {x - 3 \over x - 1} < 10 $ \\
 
@@ -297,14 +293,14 @@ You might be tempted to cross multiply, but be careful! The quantity $ x - 1$ is
 		      \begin{tabular}{|c|c|} \hline
 			      \textbf{Case 1} & \textbf{Case 2}                \\ \hline
 			      $ \begin{array}{ccc} x > 1 \ and \ x > {7 \over 9} \\ x \in (1, \infty) \end{array} $
-			                      & $ \begin{array}{ccc} x < 1 \ and \ x < {7 \over 9} \\ x \in (-\infty, {7 \over 9}) \end{array} $ \\ \hline
+			                      & $ \begin{array}{ccc} x < 1 \ and \ x < {7 \over 9} \\ x \in \left(-\infty, {7 \over 9}\right) \end{array} $ \\ \hline
 		      \end{tabular}
 	      \end{table}
 
 	\item
 	      Consolidate the 2 cases by taking the union \\
 	      $$
-		      x \in (1, \infty) \cup (-\infty, {7 \over 9})
+		      x \in (1, \infty) \cup \left(-\infty, {7 \over 9}\right)
 	      $$
 \end{enumerate}
 
@@ -340,7 +336,7 @@ You might be tempted to cross multiply, but be careful! The quantity $ x - 1$ is
 			      \centering
 			      \begin{tabular}{|c|c|} \hline
 				      \textbf{Case 1} & \textbf{Case 2}                \\ \hline
-				      $ \begin{array}{ccc} x < {1 \over 2} \ and \ x \ge {2 \over 5} \\ x \in [{2 \over 5}, {1 \over 2}) \end{array} $
+				      $ \begin{array}{ccc} x < {1 \over 2} \ and \ x \ge {2 \over 5} \\ x \in \left[{2 \over 5}, {1 \over 2}\right) \end{array} $
 				                      & $ \begin{array}{ccc} x > {1 \over 2} \ and \ x \le {2 \over 5} \\ x \in \emptyset \end{array} $ \\ \hline
 			      \end{tabular}
 		      \end{table}
@@ -348,24 +344,25 @@ You might be tempted to cross multiply, but be careful! The quantity $ x - 1$ is
 		\item
 		      Consolidate the 2 cases by taking the union \\
 		      $$
-			      x \in [{2 \over 5}, {1 \over 2})
+			      x \in \left[{2 \over 5}, {1 \over 2}\right)
 		      $$
 	\end{enumerate}
 \end{exercise}
 
-\newpage
+\chapter{The Number Line Method}
 
 \section{The Number Line Method}
 
-\subsection{The Number Line Method}
-
 Another method for solving inequalities uses the following basic logic: \\
 
-\nonumber
 \begin{align}
+	\nonumber
 	(+)(+) = + &  & {(+) \over (+)} = + \\
+	\nonumber
 	(-)(-) = + &  & {(-) \over (-)} = + \\
+	\nonumber
 	(+)(-) = - &  & {(+) \over (-)} = - \\
+	\nonumber
 	(-)(+) = - &  & {(-) \over (+)} = -
 \end{align}
 
@@ -397,13 +394,13 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 			\draw[->] (-5.5,0)--(5.5,0);
 			\foreach \x in {-5,-4,...,5}
 			\draw (\x,0.2)--(\x,0);
-			\draw(-2,0)--(-2,1)--(-6,1) node[above] {$ (-)(-) $};
-			\draw(2,0)--(2,1)--(6,1) node[above] {$ (+)(+) $};
+			\draw[very thick] (-2,0)--(-2,1)--(-6,1) node[above] {$ (-)(-) $};
+			\draw[very thick] (2,0)--(2,1)--(6,1) node[above] {$ (+)(+) $};
 		\end{tikzpicture}
 	\end{figure}
 
 	$$
-		x \in (-\infty, 1) \cup ({10 \over 3}, \infty)
+		x \in (-\infty, 1) \cup \left({10 \over 3}, \infty\right)
 	$$
 \end{exercise}
 
@@ -423,8 +420,8 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 			\draw[->] (-5.5,0)--(5.5,0);
 			\foreach \x in {-5,-4,...,5}
 			\draw (\x,0.2)--(\x,0);
-			\draw(-3,0)--(-3,1)--(-1,1)--(-1,0) node[below] {$ {(-)(+)} \over (-) $};
-			\draw(2,0)--(2,1)--(4,1)--(4,0) node[below] {$ {(+)(+)} \over (+) $};
+			\draw[very thick] (-3,0)--(-3,1)--(-1,1)--(-1,0) node[below] {$ {(-)(+)} \over (-) $};
+			\draw[very thick] (2,0)--(2,1)--(4,1)--(4,0) node[below] {$ {(+)(+)} \over (+) $};
 		\end{tikzpicture}
 	\end{figure}
 
@@ -432,5 +429,3 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 		x \in [-2, 1) \cup [3, \infty)
 	$$
 \end{exercise}
-
-\newpage

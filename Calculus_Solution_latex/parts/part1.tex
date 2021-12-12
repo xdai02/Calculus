@@ -1,14 +1,14 @@
+\part{Functions}
+
 \chapter{Functions}
 
-\section{Functions}
-
-\subsection{Function}
+\section{Function}
 
 Some types of functions: linear, parabolas, ... \\
 
 The domain of a function $ f $ is the set of all valid input values. The range consists of the set of all output values that can be reached using those domain values. \\
 
-\subsection{Rational Function}
+\section{Rational Function}
 
 \begin{itemize}
 	\item
@@ -32,7 +32,7 @@ The domain of a function $ f $ is the set of all valid input values. The range c
 	\caption{rational function}
 \end{figure}
 
-\subsection{Root Function}
+\section{Root Function}
 
 \begin{itemize}
 	\item
@@ -65,7 +65,7 @@ The domain of a function $ f $ is the set of all valid input values. The range c
 	\caption{root function when $ n $ is odd}
 \end{figure}
 
-\subsection{Higher-degree of Polynomial Function}
+\section{Higher-degree of Polynomial Function}
 
 \begin{itemize}
 	\item
@@ -101,11 +101,9 @@ The domain of a function $ f $ is the set of all valid input values. The range c
 	\caption{polynomial function when $ n $ is odd}
 \end{figure}
 
-\newpage
+\chapter{Angles, Degrees, and Radians}
 
-\section{Angles, Degrees, and Radians}
-
-\subsection{Angle}
+\section{Angle}
 
 An angle is created by two rays that intersect at a common endpoint. We use Greek letter $ \theta $ to denote angles. \\
 
@@ -113,7 +111,7 @@ An angle that opens counterclockwise from the x-axis is positive. \\
 
 An angle that opens clockwise from the x-axis is negative. \\
 
-\subsection{Degree and Radian}
+\section{Degree and Radian}
 
 Angles can be measured in 2 ways: \\
 
@@ -135,7 +133,7 @@ How are radians and degrees related? \\
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[scale=0.7]
+	\begin{tikzpicture}[scale=0.9]
 		\draw[-] (-3,0) -- (3,0);
 		\draw[-] (0,-3) -- (0,3);
 		\draw (2,0) arc (0:360:2);
@@ -180,11 +178,9 @@ Given any angle $ \theta $, what are these equivalent angles? \\
 	\end{align}
 \end{theorem}
 
-\newpage
+\chapter{Trigonometric Functions}
 
 \section{Trigonometric Functions}
-
-\subsection{Trigonometric Functions}
 
 Let $ O $ be the origin and $ P(x, y) $ be a point on the unit circle so that the radius $ OP $ forms an angle of $ \theta $ radians with respect to the positive x-axis. \\
 
@@ -372,11 +368,11 @@ Here are the three most common trigonometric functions and their reciprocals. \\
 	\caption{$ y = cot(\theta) $}
 \end{figure}
 
-\subsection{Special Triangles}
+\section{Special Triangles}
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[scale=0.4]
+	\begin{tikzpicture}[scale=0.8]
 		\draw (0,0) node[anchor=north]{$ A $}
 		-- (4,0) node[anchor=north]{$ C $}
 		-- (4,4) node[anchor=south]{$ B $}
@@ -386,7 +382,7 @@ Here are the three most common trigonometric functions and their reciprocals. \\
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[scale=0.4]
+	\begin{tikzpicture}[scale=0.8]
 		\draw (0,0) node[anchor=north]{$ A $}
 		-- (7,0) node[anchor=north]{$ C $}
 		-- (7,3) node[anchor=south]{$ B $}
@@ -410,56 +406,54 @@ Here are the three most common trigonometric functions and their reciprocals. \\
 	(a) $ tan(\theta) = {1 \over \sqrt{3}} $ \\
 
 	$$
-	\theta = {\pi \over 6}
+		\theta = {\pi \over 6}
 	$$
 
 	(b) $ sec(\theta) = \sqrt{2} $ \\
 
 	$$
-	\theta = {\pi \over 4}
+		\theta = {\pi \over 4}
 	$$
 
 	(c) $ cot(\theta) = \sqrt{3} $ \\
 
 	$$
-	\theta = {\pi \over 6}
+		\theta = {\pi \over 6}
 	$$
 \end{exercise}
 
-\subsection{Trigonometric Identities}
+\section{Trigonometric Identities}
 
 \begin{theorem}[Trigonometric Identities]
 	\begin{align}
-		 & sin^2(\theta) + cos^2(\theta) = 1             \\
-		 & sin(-\theta) = -sin(\theta)                   \\
-		 & cos(-\theta) = -cos(\theta)                   \\
-		 & tan(\theta) = {sin(\theta) \over cos(\theta)} \\
-		 & cot(\theta) = {cos(\theta) \over sin(\theta)} \\
-		 & tan^2(\theta) + 1 = sec^2(\theta)             \\
-		 & cot^2(\theta) + 1 = csc^2(\theta)             \\
-		 & sin(\theta) = cos(\theta - {\pi \over 2})     \\
-		 & sin(a \pm b) = sin(a)cos(b) \pm cos(a)sin(b)  \\
-		 & cos(a \pm b) = cos(a)cos(b) \mp sin(a)sin(b)  \\
-		 & sin(2\theta) = 2sin(\theta)cos(\theta)        \\
-		 & cos(2\theta) = cos^2(\theta) - sin^2(\theta)  \\
-		 & sin^2(\theta) = {1 - cos(2\theta) \over 2}    \\
+		 & sin^2(\theta) + cos^2(\theta) = 1                    \\
+		 & sin(-\theta) = -sin(\theta)                          \\
+		 & cos(-\theta) = -cos(\theta)                          \\
+		 & tan(\theta) = {sin(\theta) \over cos(\theta)}        \\
+		 & cot(\theta) = {cos(\theta) \over sin(\theta)}        \\
+		 & tan^2(\theta) + 1 = sec^2(\theta)                    \\
+		 & cot^2(\theta) + 1 = csc^2(\theta)                    \\
+		 & sin(\theta) = cos\left(\theta - {\pi \over 2}\right) \\
+		 & sin(a \pm b) = sin(a)cos(b) \pm cos(a)sin(b)         \\
+		 & cos(a \pm b) = cos(a)cos(b) \mp sin(a)sin(b)         \\
+		 & sin(2\theta) = 2sin(\theta)cos(\theta)               \\
+		 & cos(2\theta) = cos^2(\theta) - sin^2(\theta)         \\
+		 & sin^2(\theta) = {1 - cos(2\theta) \over 2}           \\
 		 & cos^2(\theta) = {1 + cos(2\theta) \over 2}
 	\end{align}
 \end{theorem}
 
 Reminder: $ trig^n(x) $ is a notation often used to indicate $ (trig(x))^n $. \\
 
-\newpage
+\chapter{Exponential Functions}
 
 \section{Exponential Functions}
-
-\subsection{Exponential Functions}
 
 Exponential functions are of the form $ y = a^x $, where $ a $ is a positive number and $ x $ is any real number. You might see these sorts of functions when studying population growth, economic growth, global temperature, monetary value, etc. \\
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[scale=0.9]
+	\begin{tikzpicture}[scale=0.6]
 		\draw[->] (-4,0) -- (4,0) node[right] {$ x $};
 		\draw[->] (0,-1) -- (0,4) node[above] {$ y $};
 		\draw[very thick,color=red,domain=-3:2] plot (\x,{2 ^ \x}) node[right] {$ y = {a^x} $};
@@ -488,7 +482,7 @@ Exponential functions are of the form $ y = a^x $, where $ a $ is a positive num
 	      $ y = 0 $ is always a horizontal asymptote of $ y = a^x $. \\
 \end{itemize}
 
-\subsection{Exponent Rules}
+\section{Exponent Rules}
 
 \begin{theorem}[Exponent Rules]
 	\begin{align}
@@ -504,7 +498,7 @@ Exponential functions are of the form $ y = a^x $, where $ a $ is a positive num
 	\end{align}
 \end{theorem}
 
-\subsection{The Base e}
+\section{The Base e}
 
 A very special exponential function is $ y = e^x $, where $ e $ is just a content with a non-terminating decimal like $ \pi $. \\
 
@@ -518,7 +512,7 @@ At any point on the graph, the height of the exponential function is equal to th
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[scale=0.9]
+	\begin{tikzpicture}[scale=0.6]
 		\draw[->] (-4,0) -- (4,0) node[right] {$ x $};
 		\draw[->] (0,-3) -- (0,4) node[above] {$ y $};
 		\draw[very thick,color=red,domain=-3:1] plot (\x,{e ^ \x}) node[left] {$ y = {e^x} $};
@@ -527,11 +521,9 @@ At any point on the graph, the height of the exponential function is equal to th
 	\caption{$ y = e^x $}
 \end{figure}
 
-\newpage
+\chapter{Logarithmic Functions}
 
 \section{Logarithmic Functions}
-
-\subsection{Logarithmic Functions}
 
 Logarithms are the inverse of exponential functions. Let $ a > 0$, then we define a logarithm (log) as follows: \\
 
@@ -594,19 +586,19 @@ Since any positive number to the power of 0 is equal to 1, we have the property 
 	      $ x = 0 $ is always a vertical asymptote of $ y = log_a(x) $. \\
 \end{itemize}
 
-\subsection{Logarithm Rules}
+\section{Logarithm Rules}
 
 \begin{theorem}[Logarithm Rules]
 	\begin{align}
-		 & log_a(a^x) = x                           \\
-		 & a^{log_a(x)} = x                         \\
-		 & log_a(xy) = log_a(x) + log_a(y)          \\
-		 & log_a({x \over y}) = log_a(x) - log_a(y) \\
+		 & log_a(a^x) = x                                      \\
+		 & a^{log_a(x)} = x                                    \\
+		 & log_a(xy) = log_a(x) + log_a(y)                     \\
+		 & log_a\left({x \over y}\right) = log_a(x) - log_a(y) \\
 		 & log_a(x^n) = nlog_a(x)
 	\end{align}
 \end{theorem}
 
-\subsection{Change of Base Formula}
+\section{Change of Base Formula}
 
 We can switch between any two bases easily by using the formula: \\
 
@@ -636,17 +628,17 @@ We can switch between any two bases easily by using the formula: \\
 	(a) base 3 \\
 
 	$$
-	log_3(x) = {log_4(x) \over log_4{3}}
+		log_3(x) = {log_4(x) \over log_4{3}}
 	$$
 
 	(b) base 22 \\
 
 	$$
-	log_{22}(x) = {log_4(x) \over log_4(22)}
+		log_{22}(x) = {log_4(x) \over log_4(22)}
 	$$
 \end{exercise}
 
-\subsection{The Natural Logarithm}
+\section{The Natural Logarithm}
 
 A special logarithm is the natural logarithm, which is the logarithm with a base of $ e $. Rather than write $ log_e(x) $, we typically write $ ln(x) $. \\
 
@@ -692,13 +684,13 @@ The natural logarithm has the exact same properties as any other logarithmic fun
 
 	(d)
 	\begin{align}
-		log(x) - 1   & = log(x - 1)                \\
-		-1           & = log(x - 1) - log(x)       \\
-		-1           & = log({x - 1 \over x})      \\
-		10^{-1}      & = 10^{log({x - 1 \over x})} \\
-		{1 \over 10} & = {x - 1 \over x}           \\
-		x            & = 10(x - 1)                 \\
-		-9x          & = -10                       \\
+		log(x) - 1   & = log(x - 1)                           \\
+		-1           & = log(x - 1) - log(x)                  \\
+		-1           & = log\left({x - 1 \over x}\right)      \\
+		10^{-1}      & = 10^{log\left({x - 1 \over x}\right)} \\
+		{1 \over 10} & = {x - 1 \over x}                      \\
+		x            & = 10(x - 1)                            \\
+		-9x          & = -10                                  \\
 		x            & = {10 \over 9}
 	\end{align}
 	\\
@@ -713,7 +705,7 @@ The natural logarithm has the exact same properties as any other logarithmic fun
 		x                     & = 4
 	\end{align}
 	\\
-	
+
 	(f)
 	\begin{align}
 		log_2(x^4) + log_2(x^2) & = 6     \\
@@ -724,5 +716,3 @@ The natural logarithm has the exact same properties as any other logarithmic fun
 		x                       & = \pm 2
 	\end{align}
 \end{exercise}
-
-\newpage
