@@ -1,0 +1,340 @@
+\part{Antiderivatives}
+
+\chapter{The Indefinite Integral}
+
+\section{The Indefinite Integral}
+
+How do we undo a derivative? If we were given the derivative of a function $ f'(x) $, how could we find the original function $ f(x) $? The answer is called the antiderivative of $ f(x) $, which we will denote by the associated capital letter $ F(x) $. \\
+
+Another way to think about this question is: "What function do I have to take the derivative of in order to get the answer?" The antiderivative of $ f(x) = 2x $ is $ x^2 $. \\
+
+But what about $ F(x) = x^2 + 1 $? This works too! In fact, since when we take the derivative of a constant, we get zero. We could have chosen any constant. As a result, we report our antiderivative in its most general form $ x^2 + C $. The constant $ C $ is an important part of the antiderivative. \\
+
+Notationally, we denote the operation of take the antiderivative (known as integration) as: \\
+
+$$
+    \int 2x \ dx = x^2 + C
+$$
+
+This is also called the indefinite integral of the function $ f(x) $, or sometimes just the integral of $ f(x) $, where $ f(x) $ is called the integrand. \\
+
+That was a pretty simple example, so how do we find antiderivatives of more complicated expressions? In much the same way as we did with derivatives, we can generate a set of rules for finding antiderivatives, derived simply by thinking of our familiar derivative rules in reverse. \\
+
+\section{Basic Antiderivative Rules}
+
+The power rule for derivatives multiplies by the power and then subtracts one from the power. Reversing these operations means that we add one to the power and divide by the new power. \\
+
+\subsection{Reverse Power Rule}
+
+\begin{theorem}[Reverse Power Rule]
+    \begin{align}
+        \int x^n \ dx = {x^{n+1} \over n+1} + C,\ where\ n \ne -1
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int x^6 \ dx       \\
+         & = {x^7 \over 7} + C \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int \sqrt[4]{t} \ dt       \\
+         & = \int t^{1 \over 4} \ dt   \\
+         & = {t^{5/4} \over {5/4}} + C \\
+         & = {4t^{5/4} \over 5} + C    \\
+    \end{align}
+
+    (c)
+    \begin{align}
+         & \int {1 \over x^{5/3}} \ dx  \\
+         & = \int x^{-{5 \over 3}} \ dx \\
+         & = {x^{-2/3} \over -2/3} + C  \\
+         & = -{3 \over 2x^{2/3}} + C
+    \end{align}
+\end{exercise}
+
+\subsection{Antiderivative of Zero}
+
+\begin{theorem}[Antiderivative of Zero]
+    \begin{align}
+        \int 0 \ dx = C
+    \end{align}
+\end{theorem}
+
+\subsection{Antiderivative of a Constant}
+
+\begin{theorem}[Antiderivative of a Constant]
+    \begin{align}
+        \int k \ dx = kx + C,\ where\ k\ is\ any\ constant
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives.
+
+    \begin{align}
+         & \int \pi \ dx \\
+         & = \pi x + C
+    \end{align}
+\end{exercise}
+
+\subsection{Multiplicative Constants}
+
+\begin{theorem}[Multiplicative Constantst]
+    \begin{align}
+        \int kf(x) \ dx = k \int f(x) \ dx
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int 4x^7 \ dx                    \\
+         & = 4 \int x^7 \ dx                 \\
+         & = 4\left({x^8 \over 8} + C\right) \\
+         & = {x^8 \over 2} + C               \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int {\pi \over \sqrt{t}} \ dt      \\
+         & = \pi \int t^{-{1 \over 2}} \ dt    \\
+         & = \pi \cdot {t^{1/2} \over 1/2} + C \\
+         & = 2\pi t^{1/2} + C
+    \end{align}
+\end{exercise}
+
+\subsection{Sum / Difference}
+
+\begin{theorem}[Sum / Difference]
+    \begin{align}
+        \int (f(x) \pm g(x)) \ dx = \int f(x) \ dx \pm \int g(x) \ dx
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int (3x^2 + 5) \ dx      \\
+         & = {3x^3 \over 3} + 5x + C \\
+         & = x^3 + 5x + C            \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int \left({1 \over x^3} - {2 \over x^2}\right) \ dx      \\
+         & = \int (x^{-3} - 2x^{-2}) \ dx                            \\
+         & = {x^{-2} \over -2} - 2\left({x^{-1} \over -1}\right) + C \\
+         & = -{1 \over 2x^2} + {2 \over x} + C
+    \end{align}
+\end{exercise}
+
+\subsection{Trigonometric Functions}
+
+\begin{theorem}[Trigonometric Functions]
+    \begin{align}
+        \int sin(x) \ dx       & = -cos(x) + C \\
+        \int cos(x) \ dx       & = sin(x) + C  \\
+        \int csc^2(x) \ dx     & = -cot(x) + C \\
+        \int sec^2(x) \ dx     & = tan(x) + C  \\
+        \int sec(x)tan(x) \ dx & = sec(x) + C  \\
+        \int csc(x)cot(x) \ dx & = -csc(x) + C
+    \end{align}
+\end{theorem}
+
+\subsection{Exponential / Logarithmic}
+
+\begin{theorem}[Exponential / Logarithmic]
+    \begin{align}
+        \int a^xln(a) \ dx         & = a^x + C      \\
+        \int e^xln(e) \ dx         & = e^x + C      \\
+        \int {1 \over xln(a)} \ dx & = log_a|x| + C \\
+        \int {1 \over x} \ dx      & = ln|x| + C
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int 4^xln(4) + 5e^x - {6 \over x} \ dx \\
+         & = 4^x + 5e^x - 6ln|x| + C               \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int 3^z \ dz                        \\
+         & = {1 \over ln(3)} \int 3^zln(3) \ dz \\
+         & = {1 \over ln(3)} \cdot 3^z + C
+    \end{align}
+\end{exercise}
+
+Sometimes we need to manipulate the integral a little bit before we can apply the rules. \\
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int {2s^3 - 5s^4 \over 3s^2} \ ds                                      \\
+         & = \int {2 \over 3}s - {5 \over 3}s^2 \ ds                               \\
+         & = {2 \over 3} \cdot {s^2 \over 2} - {5 \over 3} \cdot {s^3 \over 3} + C \\
+         & = {s^2 \over 3} - {5s^3 \over 9} + C                                    \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int \left({1 \over x} + {1 \over x^2}\right)\left(3 + 2x^2\right) \ dx \\
+         & = \int {3 \over x} + 2x + {3 \over x^2} + 2 \ dx                        \\
+         & = 3ln|x| + x^2 + 3 \cdot {x^{-1} \over -1} + 2x + C                     \\
+         & = 3ln|x| + x^2 + {3 \over x} + 2x + C
+    \end{align}
+\end{exercise}
+
+\chapter{Chain Rule in Reverse}
+
+\section{Chain Rule in Reverse}
+
+The derivative of $ f(u(x)) $ is $ f'(u(x))u'(x) $, so \\
+
+\begin{theorem}[Chain Rule in Reverse]
+    \begin{align}
+        \int f'(u(x))u'(x) \ dx = f(u(x)) + C
+    \end{align}
+\end{theorem}
+
+Notice that in the integration, the $ u'(x) $ piece disappears, being absorbed back into $ f(x) $. The steps for finding the antiderivative of composition functions are as follows: \\
+
+\begin{enumerate}
+    \item
+          Identify the core layer $ u(x) $.
+
+    \item
+          Identify the derivative of the core layer $ u'(x) $.
+
+    \item
+          Identify the outer layer $ f' $, and integrate $ f' $ leaving $ u(x) $ inside.
+\end{enumerate}
+
+\begin{exercise}\nonumber
+    Find the anitiderivatives. \\
+
+    (a)
+    \begin{align}
+         & \int (6x^2 + 1)sin(2x^3 + x) \ dx \\
+        \\
+         & u = 2x^3 + x                      \\
+         & u' = 6x^2 + 1                     \\
+        \\
+         & \int (6x^2 + 1)sin(2x^3 + x) \ dx \\
+         & = -cos(2x^3 + x) + C              \\
+    \end{align}
+
+    (b)
+    \begin{align}
+         & \int sec^2(4t) \ dt                \\
+        \\
+         & u = 4t                             \\
+         & u' = 4                             \\
+        \\
+         & \int sec^2(4t) \ dt                \\
+         & = {1 \over 4} \int 4sec^2(4t) \ dt \\
+         & = {1 \over 4}tan(4t) + C           \\
+    \end{align}
+
+    (c)
+    \begin{align}
+         & \int 4x^3(3x^4 - 1)^{14} \ dx                      \\
+        \\
+         & u = 3x^4 - 1                                       \\
+         & u' = 12x^3                                         \\
+        \\
+         & \int 4x^3(3x^4 - 1)^{14} \ dx                      \\
+         & = {1 \over 3} \int 12x^3(3x^4 - 1)^14 \ dx         \\
+         & = {1 \over 3} \cdot {(3x^4 - 1)^{15} \over 15} + C \\
+         & = {(3x^4 - 1)^{15} \over 45} + C                   \\
+    \end{align}
+
+    (d)
+    \begin{align}
+         & \int {e^{1 \over x} \over 4x^2} \ dx                 \\
+        \\
+         & u = {1 \over x}                                      \\
+         & u' = -{1 \over x^2}                                  \\
+        \\
+         & \int {e^{1 \over x} \over 4x^2} \ dx                 \\
+         & = {1 \over 4} \int {1 \over x^2}e^{1 \over x} \ dx   \\
+         & = -{1 \over 4} \int -{1 \over x^2}e^{1 \over x} \ dx \\
+         & = -{1 \over 4}e^{1 \over x} + C
+    \end{align}
+\end{exercise}
+
+\begin{exercise}\nonumber
+    Integrate in one step. \\
+
+    \begin{align}
+         & \int e^{-2t} + sin(3t) + cos\left({1 \over 4}t\right) \ dt                     \\
+         & = -{1 \over 2}e^{-2t} - {1 \over 3}cos(3t) + 4sin\left({1 \over 4}t\right) + C
+    \end{align}
+\end{exercise}
+
+\chapter{The Method of Substitution}
+
+\section{The Method of Substitution}
+
+The idea behind the method of substitution is to change a difficult integral in terms of one variable into an easier integral in terms of some other variable using a substitution. \\
+
+\begin{theorem}[The Method of Substitution]
+    \begin{align}
+        \int f'(u(x)) \ {du \over dx} = \int f'(u) \ du
+    \end{align}
+\end{theorem}
+
+\begin{exercise}\nonumber
+    The method of substitution.
+
+    \begin{align}
+        \int (6x + 4)(3x^2 + 4x)^5 \ dx
+    \end{align}
+
+    \begin{enumerate}
+        \item
+              Identify the core layer $ u(x) = 3x^2 +4x $. \\
+
+        \item
+              Find the derivative of the core $ {du \over dx} = 6x + 4 $. \\
+
+        \item
+              Transform from an integral in $ x $ to an integral in the new variable $ u $ using the change of variable theorem. \\
+              \begin{align}
+                   & \int (6x + 4)(3x^2 + 4x)^5 \ dx \\
+                   & = \int {du \over dx}u^5 \ dx    \\
+                   & = \int u^5 \ du                 \\
+                   & = {u^6 \over 6} + C
+              \end{align}
+
+        \item
+              Convert back to the original variable by substituting $ u(x) $ back in.
+              \begin{align}
+                   & {u^6 \over 6} + C             \\
+                   & = {(3x^2 + 4x)^6 \over 6} + C
+              \end{align}
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}\nonumber
+    Calculate using the method of substitution. \\
+
+    (a)
+
+\end{exercise}

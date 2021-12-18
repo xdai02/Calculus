@@ -217,7 +217,7 @@ The First Principles definition of the limit can become a cumbersome task when f
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = x^7 $. \\
+    Find the derivative of $ f(x) = x^7 $.
 
     $$
         f'(x) = 7x^6
@@ -231,7 +231,7 @@ The First Principles definition of the limit can become a cumbersome task when f
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = 672 $. \\
+    Find the derivative of $ f(x) = 672 $.
 
     $$
         f'(x) = 0
@@ -248,7 +248,7 @@ The First Principles definition of the limit can become a cumbersome task when f
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = log_4(x) $. \\
+    Find the derivative of $ f(x) = log_4(x) $.
 
     $$
         f'(x) = {1 \over xln(4)}
@@ -265,7 +265,7 @@ The First Principles definition of the limit can become a cumbersome task when f
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = 5^x $. \\
+    Find the derivative of $ f(x) = 5^x $.
 
     $$
         f'(x) = 5^xln(5)
@@ -298,7 +298,7 @@ What about combining these basic derivative rules for functions? That is, how do
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = 5ln(x) $. \\
+    Find the derivative of $ f(x) = 5ln(x) $.
 
     $$
         f'(x) = 5({1 \over x}) = {5 \over x}
@@ -314,7 +314,7 @@ What about combining these basic derivative rules for functions? That is, how do
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = ln(x) + 4x^3 - 6csc(x) $. \\
+    Find the derivative of $ f(x) = ln(x) + 4x^3 - 6csc(x) $.
 
     \begin{align}
         f'(x) & = {1 \over x} + 4(3x^2) - 6(-csc(x)cot(x)) \\
@@ -331,7 +331,7 @@ What about combining these basic derivative rules for functions? That is, how do
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = ln(x)cos(x) $. \\
+    Find the derivative of $ f(x) = ln(x)cos(x) $.
 
     \begin{align}
         f'(x) & = {1 \over x}cos(x) + ln(x)(-sin(x)) \\
@@ -348,7 +348,7 @@ What about combining these basic derivative rules for functions? That is, how do
 \end{theorem}
 
 \begin{exercise}\nonumber
-    Find the derivative of $ f(x) = {5^x \over x^2} $. \\
+    Find the derivative of $ f(x) = {5^x \over x^2} $.
 
     \begin{align}
         f'(x) = {5^xln(5)x^2 - 5^x(2x) \over (x^2)^2}
@@ -356,7 +356,7 @@ What about combining these basic derivative rules for functions? That is, how do
 \end{exercise}
 
 \begin{exercise}\nonumber
-    Use the Quotient Rule to prove that $ {d \over dx}cot(x) = -csc^2(x) $. \\
+    Use the Quotient Rule to prove that $ {d \over dx}cot(x) = -csc^2(x) $.
 
     \begin{align}
         {d \over dx}cot(x) & = {d \over dx}{cos(x) \over sin(x)}             \\
@@ -501,12 +501,10 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
         {dx \over dy}\left[2ye^{2xy} + e^x\right]                            & = -2xe^{2xy} - e^y + 1                         \\
         {dx \over dy}                                                        & = {-2xe^{2xy} - e^y + 1 \over 2ye^{2xy} + e^x} \\
         \\
-        \\
         e^{2xy} + e^x + e^y                                                  & = y                                            \\
         e^{2xy}\left(2y + 2x{dy \over dx}\right) + e^x + e^y{dy \over dx}    & = {dy \over dx}                                \\
         {dy \over dx}\left[2xe^{2xy} + e^y - 1\right]                        & = -e^x - 2ye^{2xy}                             \\
         {dy \over dx}                                                        & = {-e^x - 2ye^{2xy} \over 2xe^{2xy} + e^y -1}  \\
-        \\
         \\
         \therefore {dx \over dy}                                             & = {1 \over {dy \over dx}}
     \end{align}
@@ -531,5 +529,209 @@ For relations like these, there is no way to isolate for either $ x $ or $ y $. 
 
     (a) The top of the ladder slides down the wall at 0.5m/s. How fast is the foot of the ladder moving at the moment the top of the ladder touches the wall 8m above the ground? \\
 
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=0.6]
+            \draw[->] (-1,0) -- (6,0);
+            \draw[->] (0,-1) -- (0,6);
+            \draw[-,very thick,red] (0,0) -- (3,0) node[below] {$ x = 6 $};
+            \draw[-,very thick,red] (0,0) -- (0,4) node[left] {$ y = 8 $};
+            \draw[-,very thick,red] (0,4) -- (3,0);
+        \end{tikzpicture}
+    \end{figure}
 
+    KNOWN: $ {dy \over dt} = -0.5, y=8 $
+
+    \begin{align}
+        x^2 + 8^2                         & = 10^2           \\
+        x                                 & = 6              \\
+        \\
+        x^2 + y^2                         & = 10^2           \\
+        2x{dx \over dt} + 2y{dy \over dt} & = 0              \\
+        2(6){dx \over dt} + 2(8)(0.5)     & = 0              \\
+        {dx \over dt}                     & = {2 \over 3}m/s \\
+    \end{align}
+
+    (b) Consider the angle that the ladder makes with the ground. How fast is this angle changing at that exact moment? \\
+
+    WANT: $ d\theta \over dt $
+
+    \begin{align}
+        cos(\theta)                    & = {x \over 10}                   \\
+        -sin(\theta){d\theta \over dt} & = {1 \over 10}{dx \over dt}      \\
+        -{4 \over 5}{d\theta \over dt} & = {1 \over 10} \cdot {2 \over 3} \\
+        {d\theta \over dt}             & = -{1 \over 12}radians/s
+    \end{align}
+\end{exercise}
+
+\chapter{Logarithmic Differentiation}
+
+\section{Logarithmic Differentiation}
+
+Logarithmic differentiation allows us to take the derivatives of more complicated expressions. The derivative rules give us a way to quickly differentiate expression like $x^5$, $e^{4x}$, $ 2^x $. But what about $x^x$? \\
+
+\begin{exercise}\nonumber
+    Use a table of values to sketch the function $ f(x) = x^x $. \\
+
+    \begin{figure}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $ x > 0 $     & $ f(x) $ & $ x < 0 $        & $ f(x) $          \\
+            \hline
+            1             & 1        & -1               & -1                \\
+            \hline
+            2             & 4        & -2               & $ 1 \over 4 $     \\
+            \hline
+            3             & 27       & -3               & $ -{1 \over 27} $ \\
+            \hline
+            $ 1 \over 2 $ & 0.707    & $ -{1 \over 3} $ & -1.44             \\
+            \hline
+        \end{tabular}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=0.6, yscale=0.7]
+            \draw[->] (-2,0) -- (4,0) node[right] {$ x $};
+            \draw[->] (0,-2) -- (0,7) node[above] {$ y $};
+            \draw[very thick,color=red,domain=0.15:2.2] plot (\x, {\x ^ \x});
+            \node at (0,0.9) [red,circle,inner sep=1.5pt]{$\circ$};
+        \end{tikzpicture}
+        \caption{$ y = x ^ x $ when $ x > 0 $}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=0.6]
+            \draw[->] (-5,0) -- (2,0) node[right] {$ x $};
+            \draw[->] (0,-3) -- (0,2) node[above] {$ y $};
+            \node at (-0.33,-1.44) [red,circle,fill,inner sep=1.5pt]{};
+            \node at (-1,-1) [red,circle,fill,inner sep=1.5pt]{};
+            \node at (-2,0.25) [red,circle,fill,inner sep=1.5pt]{};
+            \node at (-3,-0.037) [red,circle,fill,inner sep=1.5pt]{};
+            \node at (-4,0.0039) [red,circle,fill,inner sep=1.5pt]{};
+        \end{tikzpicture}
+        \caption{$ y = x ^ x $ when $ x < 0 $}
+    \end{figure}
+\end{exercise}
+
+$ x^x $ is indeterminate when $ x = 0 $. Because the domain of $ x^x $ is extremely complicated when $ x < 0 $, this function is often only considered for $ x > 0 $. \\
+
+So, how do we determine the derivative of this function? With logarithmic differentiation, we take the ln() of both side. Then we use log rules to simplify what we get before we finish by differentiating implicitly. \\
+
+\begin{exercise}\nonumber
+    If $ y = (cos(\pi x))^{2x} $, find $  dy \over dx $.
+
+    \begin{align}
+        y                               & = x^x                                  \\
+        ln(y)                           & = xln(x)                               \\
+        {1 \over y} \cdot {dy \over dx} & = (1)ln(x) + x\left({1 \over x}\right) \\
+        {dy \over dx}                   & = y\left[ln(x) + 1\right]              \\
+        {dy \over dx}                   & = x^x\left[ln(x) + 1\right]
+    \end{align}
+\end{exercise}
+
+\begin{exercise}\nonumber
+    If $ y = \left(cos(\pi x)\right)^{2x} $, find $  dy \over dx $.
+
+    \begin{align}
+        y                               & = \left(cos(\pi x)\right)^{2x}                                                                                \\
+        ln(y)                           & = 2x \cdot ln\left(cos(\pi x)\right)                                                                          \\
+        {1 \over y} \cdot {dy \over dx} & = 2ln\left(cos(\pi x)\right) + 2x\left({1 \over cos(\pi x)}\right)\left(-sin(\pi x)\right)\pi                 \\
+        {dy \over dx}                   & = \left(cos(\pi x)\right)^{2x}\left[2ln(cos(\pi x)) - 2\pi x\left({sin(\pi x) \over cos(\pi x)}\right)\right]
+    \end{align}
+\end{exercise}
+
+It would be tedious to differentiate expression like $ y = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}} $ using product and quotient rules, and put pus at a high risk for making mistakes. We can use logarithms to simplify problems. It is technically an important step that we take the absolute value of both sides first that we aren¡¯t considering the $ ln() $ of a negative number. \\
+
+\begin{exercise}\nonumber
+    If $ y = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}} $, find $ dy \over dx $. \\
+
+    \begin{align}
+        y                               & = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}}                                                                                               \\
+        ln|y|                           & = ln\left|{(x-2)^2 (3x+1)^3 \sqrt{x^2+2} \over (x-1) (x+1)^{10}}\right|                                                                              \\
+        ln|y|                           & = ln\left|(x-2)^2| + ln|(3x+1)^3| + ln|(x^2+3)^{1/2}| - ln|x-1| - ln|(x+1)^{10}\right|                                                               \\
+        ln|y|                           & = 2ln|x-2| + 3ln|3x+1| + {1 \over 2}ln|x^2+3| - ln|x-1| - 10ln|x+1|                                                                                  \\
+        {1 \over y} \cdot {dy \over dx} & = {2 \over x-2} + {3 \over 3x+1}(3) + {1 \over 2} \cdot {2x \over x^2+3} - {1 \over x-1} - {10 \over x+1}                                            \\
+        {dy \over dx}                   & = {(x-2)^2(3x+1)^3\sqrt{x^2+2} \over (x-1)(x+10)^{10}}\left({2 \over x-2} + {9 \over 3x+1} + {x \over x^2+3} - {1 \over x-1} - {10 \over x+1}\right)
+    \end{align}
+\end{exercise}
+
+\chapter{Differential Approximation}
+
+\section{Differential Approximation}
+
+Differential approximation allows us to calculate estimates if numbers that would be impossible to find by hand. For example, we know what $ sin(\pi) $ is, but what about $ sin(3) $? \\
+
+The idea is simple. Given a function $ f(x) $ and a difficult-to-evaluate value of $ x = a $, we want to follow this process to estimate $  f(a) $: \\
+
+\begin{enumerate}
+    \item
+          Find a nearby value $ a^* $ at which $ f $ is easy to calculate. \\
+
+    \item
+          Find the tangent line there, called $ L(x) $, with slope $ f'(a^*) $. \\
+
+    \item
+          Estimate $ f(a) $ by using the height $ L(a) $ instead. \\
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.7]
+        \draw[->] (-1,0) -- (4,0) node[right] {$ x $};
+        \draw[->] (0,-4) -- (0,4) node[above] {$ y $};
+        \draw [very thick,color=red,domain=0.1:4,samples=100] plot (\x,{log2(\x)});
+        \draw[-,red,very thick] (-1,-4) -- (3,4);
+    \end{tikzpicture}
+\end{figure}
+
+\begin{exercise}\nonumber
+    Estimate $ sin(3) $ using differential approximation. \\
+
+    \begin{enumerate}
+        \item
+              Let $ f(x) = sin(x) $, and the nearby value $ a^* = \pi $. \\
+              Then $ f'(x) = cos(x) $, so $ f'(a^*) = cos(\pi) = -1 $. \\
+
+        \item
+              Now, find the equation of the tangent line to $ f $ at the nearby value $ \pi $.
+              \begin{align}
+                  L(x)            & = mx + b    \\
+                                  & = (-1)x + b \\
+                  0               & = -\pi + b  \\
+                  b               & = \pi       \\
+                  \therefore L(x) & = -x + \pi
+              \end{align}
+
+        \item
+              Calculate the estimate of $ f(a) = f(3) $ using $ L(a) = L(3) $ instead.
+              \begin{gather*}
+                  L(3) = -3 + \pi \approx 0.14159265
+              \end{gather*}
+
+        \item
+              True value of $ sin(3) = 0.14112 $.
+    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}\nonumber
+    Estimate $ \sqrt{65} $ using differential approximation.
+
+    \begin{align}
+        f(x)            & = \sqrt{x}, a^* = 64                  \\
+        f(64)           & = \sqrt{64} = 8                       \\
+        \\
+        f'(x)           & = {1 \over 2\sqrt{x}}                 \\
+        f'(64)          & = {1 \over 2\sqrt{64}} = {1 \over 16} \\
+        \\
+        L(x) = mx + b   & = {1 \over 16}x + b                   \\
+        8               & = {1 \over 16}(64) + b                \\
+        b               & = 4                                   \\
+        \\
+        \therefore L(x) & = {1 \over 16}x +4                    \\
+        L(65)           & = {1 \over 16}(65) + 4                \\
+                        & = 8.0625
+    \end{align}
 \end{exercise}
