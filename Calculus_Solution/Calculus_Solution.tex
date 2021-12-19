@@ -4,6 +4,14 @@
 \usepackage{float}
 \usepackage{pgfplots}
 
+\usepgfplotslibrary{fillbetween}
+
+\pgfplotsset{every axis/.append style={
+    axis x line=middle,
+    axis y line=middle,
+    axis line style={->},
+}}
+
 \input{style/structure.tex}
 
 \hypersetup{pdftitle={Calculus Solution}, pdfauthor={Terry}}
@@ -33,10 +41,10 @@
 
 \chapterimage{style/chapter.pdf}
 
-% \include{parts/part1}
-% \include{parts/part2}
-% \include{parts/part3}
-% \include{parts/part4}
+\include{parts/part1}
+\include{parts/part2}
+\include{parts/part3}
+\include{parts/part4}
 \include{parts/part5}
 
 \end{document}
