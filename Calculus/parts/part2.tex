@@ -20,8 +20,6 @@ Piecewise functions typically feature one or more points at which the function c
 		\begin{tikzpicture}[scale=0.3,yscale=0.4]
 			\draw[->] (-7,0) -- (7,0) node[right] {$ x $};
 			\draw[->] (0,-18) -- (0,18) node[above] {$ y $};
-			\draw[very thick,color=red,domain=-5:0] plot (\x,{1});
-			\draw[very thick,color=red,domain=0:2,samples=100] plot (\x,{4 ^ \x});
 		\end{tikzpicture}
 	\end{figure}
 \end{exercise}
@@ -41,15 +39,6 @@ Piecewise functions typically feature one or more points at which the function c
 		\begin{tikzpicture}[scale=0.5,yscale=0.3]
 			\draw[->] (-10,0) -- (6,0) node[right] {$ x $};
 			\draw[->] (0,-5) -- (0,20) node[above] {$ y $};
-			\draw[very thick,color=red,domain=-9:-2.1] plot (\x,{0.5 * \x + 3});
-			\draw[very thick,color=red,domain=-2:2] plot (\x,{0});
-			\draw[very thick,color=red,domain=2.1:4] plot (\x,{\x^2 - 1});
-			\foreach \point in {(-2,0),(2,0)} {
-					\node at \point [red,circle,fill,inner sep=1.5pt]{};
-				}
-			\foreach \point in {(-2,2),(2,3)} {
-					\node at \point [red,circle,inner sep=1.5pt]{$\circ$};
-				}
 		\end{tikzpicture}
 	\end{figure}
 \end{exercise}
@@ -114,38 +103,32 @@ The infinity symbol $ \infty $ is always accompanied by round brackets. \\
 	Write each of the following in interval notation. \\
 
 	(a) $ 2 \le x \le 7 $ \\
-	$$
-		x \in [2, 7]
-	$$
+	\\
+	\\
 
 	(b) $ x < 9 $ \\
-	$$
-		x \in (-\infty, 9)
-	$$
+	\\
+	\\
 
 	(c) $ -3 > x > 0 $ \\
-	$$
-		x \in \emptyset
-	$$
+	\\
+	\\
 \end{exercise}
 
 \begin{exercise}\nonumber
 	Write each of the following using inequalities. \\
 
 	(a) $ x \in [3, 6) $ \\
-				$$
-					3 \le x < 6
-				$$
+				\\
+				\\
 
 				(b) $ x \in (-2, 4) $ \\
-				$$
-					-2 < x < 4
-				$$
+				\\
+				\\
 
 				(c) $ x \in (-\infty, -1] $ \\
-	$$
-		x \le -1
-	$$
+	\\
+	\\
 \end{exercise}
 
 It is possible to have ranges of values that are disjoint. We use the union symbol $ \cup $ to include all of the values in any of the disjoint ranges. For example, $ [-1, 4) \cup [7, 10) $ meas $ -1 \le x < 4 $ or $ 7 \le x < 10 $. \\
@@ -154,19 +137,16 @@ It is possible to have ranges of values that are disjoint. We use the union symb
 	Express each of the following in interval notation. \\
 
 	(a) $ -3 \le x < {1 \over 2} $ or $ 4 < x < 7 $ \\
-	$$
-		x \in \left[-3, {1 \over 2}\right] \cup (4, 7)
-	$$
+	\\
+	\\
 
 	(b) $ 1 \le x < 5 $ or $ 3 \le x < 7 $ \\
-	$$
-		x \in [1, 7)
-	$$
+	\\
+	\\
 
 	(c) $ x \in [-2, 6) \bigcup (0, 5) $ \\
-	$$
-		x \in [-2, 6)
-	$$
+	\\
+	\\
 \end{exercise}
 
 Intersection symbol $ \cap $ allows only the values that are common between intervals. For example, $ [-1, 6) \cap (2, 7) $ means $ (2, 6) $. \\
@@ -175,19 +155,16 @@ Intersection symbol $ \cap $ allows only the values that are common between inte
 	Express each of the following in interval notation. \\
 
 	(a) $ -2 < x \le 6 $ and $ 0 < x < 7 $ \\
-	$$
-		x \in (0, 6]
-	$$
+	\\
+	\\
 
 	(b) $ x \in [0, 5] \bigcap [3, 5] $ \\
-	$$
-		x \in [3, 5]
-	$$
+	\\
+	\\
 
 	(c) $ -4 < x < 0 $ and $ 3 < x < 7 $ \\
-	$$
-		x \in \emptyset
-	$$
+	\\
+	\\
 \end{exercise}
 
 \section{Solving Inequalities}
@@ -210,48 +187,48 @@ When solving inequalities, there are a few rules that we must follow: \\
 
 	(a)
 	\begin{align}
-		-6x + 7 & \ge 8x          \\
-		-14x    & \ge -7          \\
-		x       & \le {1 \over 2}
+		-6x + 7 & \ge 8x \\
+		\\
+		\\
 	\end{align} \\
 
 	(b)
 	\begin{align}
-		-{5 \over 2} < 4 - 2x \le 1      \\
-		-{13 \over 2} < -2x \le -3       \\
-		{13 \over 4} > x \ge {3 \over 2} \\
-		x \in \left[{3 \over 2}, {13 \over 4}\right)
+		-{5 \over 2} < 4 - 2x \le 1 \\
+		\\
+		\\
+		\\
 	\end{align} \\
 
 	(c)
 	\begin{align}
 		5x^3 + 27 & > -13 \\
-		5x^3      & > -40 \\
-		x^3       & > -8  \\
-		x         & > -2
+		\\
+		\\
+		\\
 	\end{align} \\
 
 	(d)
 	\begin{align}
-		3x^2 + 2 & < -4          \\
-		3x^2     & < -6          \\
-		x^2      & < -2          \\
-		x        & \in \emptyset
+		3x^2 + 2 & < -4 \\
+		\\
+		\\
+		\\
 	\end{align} \\
 
 	(e)
 	\begin{align}
-		\sqrt{x-1} & > 4  \\
-		x - 1      & > 16 \\
-		x          & > 17
+		\sqrt{x-1} & > 4 \\
+		\\
+		\\
 	\end{align} \\
 
 	(f)
 	\begin{align}
-		log_2(3x)     & \le -3           \\
-		2^{log_2(3x)} & \le 2^{-3}       \\
-		3x            & \le {1 \over 8}  \\
-		x             & \le {1 \over 24}
+		log_2(3x) & \le -3 \\
+		\\
+		\\
+		\\
 	\end{align}
 \end{exercise}
 
@@ -313,39 +290,34 @@ You might be tempted to cross multiply, but be careful! The quantity $ x - 1$ is
 		      \begin{table}[H]
 			      \centering
 			      \begin{tabular}{|c|c|} \hline
-				      \textbf{Case 1} & \textbf{Case 2}                \\ \hline
-				      $ \begin{array}{ccc} 1 - 2x & > & 0 \\ x & < & {1 \over 2} \end{array} $
-				                      & $ \begin{array}{ccc} 1 - 2x & < & 0 \\ x & > & {1 \over 2} \end{array} $ \\ \hline
+				      \textbf{\hspace{2cm}Case 1\hspace{2cm}} & \textbf{\hspace{2cm}Case 2\hspace{2cm}} \\ \hline
 			      \end{tabular}
 		      \end{table}
+		      \vspace{2cm}
 
 		\item
 		      Solve the original problem under each assumption \\
 		      \begin{table}[H]
 			      \centering
 			      \begin{tabular}{|c|c|} \hline
-				      \textbf{Case 1} & \textbf{Case 2}                \\ \hline
-				      $ \begin{array}{ccc} {7x-2 \over 1-2x} & \ge & 4 \\ 7x - 2 & \ge & 4(1-2x) \\ 15x & \ge & 6 \\ x & \ge & {2 \over 5} \end{array} $
-				                      & $ \begin{array}{ccc} {7x-2 \over 1-2x} & \ge & 4 \\ 7x - 2 & \le & 4(1-2x) \\ 15x & \le & 6 \\ x & \le & {2 \over 5} \end{array} $ \\ \hline
+				      \textbf{\hspace{2cm}Case 1\hspace{2cm}} & \textbf{\hspace{2cm}Case 2\hspace{2cm}} \\ \hline
 			      \end{tabular}
 		      \end{table}
+		      \vspace{3cm}
 
 		\item
 		      Find all common points between assumption and solution \\
 		      \begin{table}[H]
 			      \centering
 			      \begin{tabular}{|c|c|} \hline
-				      \textbf{Case 1} & \textbf{Case 2}                \\ \hline
-				      $ \begin{array}{ccc} x < {1 \over 2} \ and \ x \ge {2 \over 5} \\ x \in \left[{2 \over 5}, {1 \over 2}\right) \end{array} $
-				                      & $ \begin{array}{ccc} x > {1 \over 2} \ and \ x \le {2 \over 5} \\ x \in \emptyset \end{array} $ \\ \hline
+				      \textbf{\hspace{2cm}Case 1\hspace{2cm}} & \textbf{\hspace{2cm}Case 2\hspace{2cm}} \\ \hline
 			      \end{tabular}
 		      \end{table}
+		      \vspace{3cm}
 
 		\item
 		      Consolidate the 2 cases by taking the union \\
-		      $$
-			      x \in \left[{2 \over 5}, {1 \over 2}\right)
-		      $$
+		      \\
 	\end{enumerate}
 \end{exercise}
 
@@ -372,10 +344,10 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 	Find all values of x that satisfy $ 3x^2 - 13x > -10 $. \\
 
 	\begin{align}
-		3x^2 - 13x        & > -10 \\
-		3x^2 - 13x + 10   & > 0   \\
-		3x(x-1) - 10(x-1) & > 0   \\
-		(x-1)(3x-10)      & > 0   \\
+		\\
+		\\
+		\\
+		\\
 	\end{align}
 
 	\begin{figure}[H]
@@ -389,19 +361,17 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 		\end{tikzpicture}
 	\end{figure}
 
-	$$
-		x \in (-\infty, 1) \cup \left({10 \over 3}, \infty\right)
-	$$
+	\vspace{1cm}
 \end{exercise}
 
 \begin{exercise}\nonumber
 	Find all values of x that satisfy $ x - 2 \ge {4 \over x+1} $. \\
 
 	\begin{align}
-		x - 2                    & \ge {4 \over x+1} \\
-		(x-2)(x+1) - 4 \over x+1 & \ge 0             \\
-		x^2 - x - 6 \over x + 1  & \ge 0             \\
-		(x-3)(x+2) \over x+1     & \ge 0             \\
+		\\
+		\\
+		\\
+		\\
 	\end{align}
 
 	\begin{figure}[H]
@@ -415,7 +385,5 @@ By manipulating expressions into factors that are multiplied and/or divided on o
 		\end{tikzpicture}
 	\end{figure}
 
-	$$
-		x \in [-2, 1) \cup [3, \infty)
-	$$
+	\vspace{1cm}
 \end{exercise}

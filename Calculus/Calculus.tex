@@ -1,0 +1,49 @@
+\documentclass[12pt, openany, oneside]{book}
+
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{pgfplots}
+
+\usepgfplotslibrary{fillbetween}
+
+\pgfplotsset{every axis/.append style={
+    axis x line=middle,
+    axis y line=middle,
+    axis line style={->},
+}}
+
+\input{style/structure.tex}
+
+\hypersetup{pdftitle={Calculus}, pdfauthor={Terry}}
+
+\setlength{\parindent}{0em}
+
+\begin{document}
+
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{style/cover_page.pdf}};
+    \draw (current page.center) node [fill=ocre!60!white,fill opacity=0.8,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\Huge \centering Calculus\\[10pt]}};
+\end{tikzpicture}
+\vfill
+\endgroup
+
+\newpage
+
+\chapterimage{style/TOC.pdf}
+
+\pagestyle{empty}
+
+\setcounter{tocdepth}{0}
+\tableofcontents
+
+\chapterimage{style/chapter.pdf}
+
+\include{parts/part1}
+\include{parts/part2}
+\include{parts/part3}
+\include{parts/part4}
+\include{parts/part5}
+
+\end{document}
