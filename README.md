@@ -16,7 +16,7 @@
     - Basic Limits
     - Continuity
     - The Fundamental Sine Limit
-    - Limits Approaching $ \pm \infin $
+    - Limits Approaching $ \pm\infty$
 - Chapter 4: Derivatives
     - The First Principles
     - Differentiability and Continuity
